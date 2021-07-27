@@ -12,12 +12,16 @@ body {
 }
 a {
     text-decoration: none;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
+}
+a > svg *{
+    transition: all 0.5s ease;
 }
 h1 {
     font-family: "Prata", serif;
     font-size: 32px;
     font-weight: 400;
+    line-height: 38px;
 }
 .top {
     height: 40px;
@@ -39,6 +43,9 @@ h1 {
 .top__link:hover {
     color: #28292f;
 }
+.top__link:hover > svg *{
+    stroke: #28292f;
+  }
 .header-contacts {
     display: flex;
     justify-content: space-between;
@@ -64,6 +71,9 @@ header li {
 }
 .header__link:hover {
     color: #ff6869;
+}
+.header__link:hover > svg *{
+    stroke: #FF6869;
 }
 .header__link_tel {
     margin-left: 40px;
@@ -111,11 +121,17 @@ header li {
     justify-content: space-between;
     margin-right: 20px;
 }
-.menu {
+.account:hover > svg *{
+    stroke: #FF6869;
+  }
+.main-menu {
     display: flex;
     justify-content: center;
 }
-.menu__btn {
+.main-menu__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Prata", serif;
     font-size: 14px;
     font-weight: 400;
@@ -124,7 +140,7 @@ header li {
     padding: 0 20px;
     border-right: 1px solid #efeded;
 }
-.menu__btn:last-child {
+.main-menu__btn:last-child {
     border-right: 0
 }
 
@@ -134,7 +150,7 @@ header li {
 .banner {
     display: flex;
     align-items: center;
-    margin: 15px 40px;
+    margin: 15px 40px 120px 40px;
     height: 470px;
     background: url("img/banner/image62.jpg") no-repeat;
 }
@@ -143,7 +159,7 @@ header li {
     display: flex;
     flex-direction: column;
 }
-.frame-banner {
+.frame_banner {
     font-size: 14px;
     font-weight: 400;
     width: 290px;
@@ -159,15 +175,120 @@ header li {
     margin: 25px 0;
 }
 .frame__button {
+    color: #28292f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     border: 1px solid #EFEDED;
     border-radius: 2px;
     text-transform: uppercase;
 }
-.frame-banner__button {
+.frame__button:hover {
+    color: #ff6869;
+}
+.frame__button_banner {
     width: 168px;
     height: 42px;
 }
+
+.products-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; 
+}
+.products-menu__btn {
+    font-family: "Prata", serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a9a9a9;
+    height: 20px;    
+    padding: 0 20px;
+}
+.products-menu__square {
+    margin-top: 8px;
+    width: 4px;
+    height: 4px;
+    background: #a9a9a9;
+}
+.products-menu__btn:hover {
+    color: #28292f;
+    border-color: #28292f;
+}
+.products-content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 131px;
+}
+.products-content__cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 240px;
+}
+.products-content__cart p {
+    font-size: 14px;
+    text-align: center;
+    width: 230px;
+    margin: 15px auto;
+}
+.actual-price {
+    font-family: "Prata", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.old-price{
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 1198px;
+    background-color: #f2efec;
+    padding-top: 110px;
+}
+.about-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1104px;
+    margin: 0 auto;
+}
+.about__heading {
+    max-width: 437px;
+}
+.about__heading hr {
+    width: 80px;
+    margin-bottom: 70px;
+}
+.about__menu-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 402px;
+    height: 264px;    
+}
+.about__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 402px;
+}
+.about__menu__btn {
+    display: block;
+    text-align: center;
+    width: 80px;
+    height: 111px;
+    text-transform: uppercase;
+    color: #28292f;
+}
+.about__menu__btn:hover {
+    color: #FF6869;
+}
+.about__menu__btn:hover > svg *{
+    fill: #FF6869;
+  }
 .footer {
     background-color: #f2efec;
     height: 719px;
