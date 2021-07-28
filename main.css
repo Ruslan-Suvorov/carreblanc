@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,700;1,800&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +23,12 @@ h1 {
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
+}
+h2 {
+    font-family: "Prata", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
 }
 .top {
     height: 40px;
@@ -143,10 +150,6 @@ header li {
 .main-menu__btn:last-child {
     border-right: 0
 }
-
-.main {
-    
-}
 .banner {
     display: flex;
     align-items: center;
@@ -220,18 +223,52 @@ header li {
     justify-content: space-evenly;
     padding-bottom: 131px;
 }
-.products-content__cart {
+.products-content-cart {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 240px;
 }
-.products-content__cart p {
+.products-content-cart p {
     font-size: 14px;
     text-align: center;
     width: 230px;
     margin: 15px auto;
+}
+.products-content-cart-labels {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.products-content-cart__label {
+    padding: 4px 8px;
+    font-family: "Work Sans" sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+    border-radius: 2px;
+    margin-right: 4px;
+}
+.products-content-cart__label_new {
+    background-color: #43B686;
+}
+.products-content-cart__label_discount {
+    background-color: #342B68;
+}
+.products-content-cart__label_hit {
+    background-color: #FD4833;
+}
+.products-content-cart__label_bio {
+    background-color: #4C9C2E;
+}
+.products-content-cart__label_offer {
+    background-color: #EF9E02;
 }
 .actual-price {
     font-family: "Prata", serif;
@@ -245,9 +282,10 @@ header li {
 .about {
     display: flex;
     flex-direction: column;
-    height: 1198px;
     background-color: #f2efec;
     padding-top: 110px;
+    margin-bottom: 406px;
+    height: 1088px;
 }
 .about-block {
     display: flex;
@@ -289,6 +327,79 @@ header li {
 .about__menu__btn:hover > svg *{
     fill: #FF6869;
   }
+.about__categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 542px;
+    height: 540px;
+}
+.about__categories_1 {
+    background: url("img/about/cateries1.jpg"); 
+    width: 1104px;
+    height: 460px;
+    margin: 100px auto 20px auto;
+  }
+.about__categories_2 {
+    background: url("img/about/categories2.jpg") no-repeat;
+    background-size: cover;
+}
+.about__categories_3 {
+    background: url("img/about/categories_3.jpg") no-repeat;
+    background-size: cover;
+}
+.frame_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 146px;
+    width: 297px;
+    padding: 30px 50px;
+}
+.frame_about-categories1 {
+    height: 170px;
+    width: 400px;
+    padding: 30px 80px;
+}
+.frame_about .frame__button {
+    padding: 11px 46px;
+    margin-top: 25px;
+}
+.boy-banner {
+    display: flex;
+    justify-content: space-around;
+    background: #AEECE2;
+    width: 1360px;
+    height: 500px;
+    margin: 0 auto;
+}
+.broderie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 343px;
+    width: 370px;
+    margin: 78px 0;
+}
+.broderie span {
+    font-family: "Prata", serif;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+}
+.broderie p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.broderie .frame__button {
+    color: #fff;
+    background-color: #FF6869;
+    border: none;
+    padding: 11px 46px;
+}
 .footer {
     background-color: #f2efec;
     height: 719px;
