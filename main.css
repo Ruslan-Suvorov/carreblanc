@@ -477,6 +477,50 @@ header li {
     font-style: normal;
     color: #28292f;
 }
+.owl-carousel {
+    max-width: 1005px;
+}
+.carousel {
+    display: flex;
+    max-width: 1091px;
+}
+.owl-carousel__item {
+    width: 185px;
+    height: 185px;
+}
+.owl-carousel__item_hov {
+    position:absolute; 
+    visibility:hidden;    
+    width: 185px;
+    height: 185px;
+    background:rgba(255, 255, 255, 0.8);
+    font-size:20px;
+    top:160px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+.owl-carousel__item:hover .owl-carousel__item_hov {
+    visibility: visible;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transform: translatey(-160px);
+    -webkit-transform: translatey(-160px);
+}
+.prev_button {
+    margin-right: 28px;
+}
+.next_button {
+    margin-left: 28px;
+}
+.advance {
+    display: inline-flex;
+    margin: 134px auto 150px auto;
+}
+
 .footer {
     background-color: #f2efec;
     height: 719px;
