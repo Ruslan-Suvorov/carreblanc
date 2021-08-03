@@ -15,4 +15,3 @@ $(function() {
         owl.trigger("prev.owl.carousel");
       });
   });
-  
