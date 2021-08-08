@@ -27,8 +27,9 @@ $(function() {
       });
   });
 
+  const body = document.querySelector('.body');
   const menuBtn = document.getElementById('open-menu-btn');
   const menu = document.querySelector('.menu-mobile');
   const closeMenu = document.getElementById('close-menu-btn');
-  menuBtn.addEventListener('click', () => menu.style.display = 'flex')
-  closeMenu.addEventListener('click', () => menu.style.display = 'none')
+  menuBtn.addEventListener('click', () => {menu.style.width = '100%'; body.style.overflow='hidden';})
+  closeMenu.addEventListener('click', () => {menu.style.width = '0'; body.style.overflow='';})
