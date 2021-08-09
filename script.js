@@ -5,7 +5,7 @@ $(function() {
       items: 5,
       margin: 100,
       loop: true,
-      nav: true,
+      nav: false,
       responsive:{
         0:{
           items:1
