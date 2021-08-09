@@ -986,6 +986,8 @@ header li {
     justify-content: center;
     align-items: center;
     width: 15%;
+    height: 100vh;
+    position: fixed;
 }
 .menu-mobile__top {
     display: flex;
