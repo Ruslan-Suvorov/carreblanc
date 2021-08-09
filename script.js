@@ -31,5 +31,16 @@ $(function() {
   const menuBtn = document.getElementById('open-menu-btn');
   const menu = document.querySelector('.menu-mobile');
   const closeMenu = document.querySelector('.menu-mobile__close');
-  menuBtn.addEventListener('click', () => {menu.style.width = '100%'; body.style.position='fixed'; body.style.width = '100%'})
-  closeMenu.addEventListener('click', () => {menu.style.width = '0'; body.style.position='';})
+  menuBtn.addEventListener('click', () => {
+      menu.style.width = '100%'; 
+      body.style.position='fixed'; 
+      body.style.width = '100%'; 
+      closeMenu.style.position='fixed'; 
+      closeMenu.style.width='15%'
+  })
+  closeMenu.addEventListener('click', () => {
+      menu.style.width = '0'; 
+      body.style.position=''; 
+      closeMenu.style.position=''; 
+      closeMenu.style.width='100%'
+  })
