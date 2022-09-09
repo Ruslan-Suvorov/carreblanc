@@ -5,6 +5,9 @@ $(function() {
       items: 5,
       margin: 100,
       loop: true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      smartSpeed: 1000,
       nav: false,
       responsive:{
         0:{
